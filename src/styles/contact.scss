@@ -44,12 +44,22 @@
             width: 100%;
             margin: 0 auto;
             margin-top: 10vw;
-            &--contenedor{
+            &--contenedor{         
+                grid-template-columns:1fr;                    
                 grid-column-gap: 2vw;
-                grid-row-gap: 10vw;
+                grid-row-gap: 5vw;
                 input, textarea,.botonContacto {
-                    padding: 4vw 1vw;                                     
+                padding: 4vw 1vw;                                     
                 }
+                textarea{
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+                .botonContacto {     
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                }
+    
             }
          }
     }
