@@ -1,0 +1,31 @@
+.Footer {
+    margin-top: 3vw;
+    background-color: var(--negro);
+    padding: 3vw 0;
+    &__contenedor {
+        width: 90%;
+        margin: 0 auto;
+        color: var(--blanco);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    &__social{
+        font-size: var(--titulo);
+        display: flex;
+        justify-self: right;
+        .socialIcon{
+            margin-left: 2vw;
+            color: var(--blanco);
+            &:hover {
+                color: var(--morado);
+                transition: 500ms all;
+                transform: scale(1.2);
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        margin-top: 10vw;
+        padding: 10vw 0;
+    }
+}

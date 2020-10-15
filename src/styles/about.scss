@@ -1,0 +1,29 @@
+.About {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    p{
+        margin-top: 3vw;
+    }
+    &__img {
+       img{
+        border-radius: 10px;        
+       }
+    }
+    @media screen and (max-width:768px){
+        margin-top: 20vw;
+        margin-bottom: 20vw;
+        grid-template-columns: 1fr;
+        p{
+            margin-top: 10vw;
+        }
+        &__img {
+            margin-top: 10vw;
+            img{
+        
+             max-width: 100%;
+            }
+         }
+    }
+}
